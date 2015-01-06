@@ -2282,8 +2282,8 @@ ul.wizard li:first-child {
   background-size: cover;
 }
 .weezer-icon.weezer-pencil {
-  width: 16px;
-  height: 16px;
+  width: 19px;
+  height: 19px;
   background-image: url("img/icons/icone_wezer-01.png");
 }
 .weezer-icon.weezer-envelope {
@@ -2316,6 +2316,11 @@ ul.wizard li:first-child {
   height: 16px;
   background-image: url("img/icons/icone_wezer-08.png");
 }
+
+
+
+
+
 
 .no-padding-top {
   padding-top: 0px !important;
@@ -2688,6 +2693,17 @@ h5.footer-title .footer-logo.logo-valeureux {
   -webkit-background-size: 100px, 70px;
   background-size: 100px, 70px;
 }
+
+h5.footer-title .footer-logo.logo-wezer {
+  width: 100px;
+  height: 70px;
+  background-image: url("img/logo.png");
+  -moz-background-size: 100px, 70px;
+  -o-background-size: 100px, 70px;
+  -webkit-background-size: 100px, 70px;
+  background-size: 100px, 70px;
+}
+
 
 .bg-login {
   background: #EEE;
