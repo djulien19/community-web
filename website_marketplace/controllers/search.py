@@ -67,7 +67,7 @@ class SearchController(http.Controller):
             if ttype:
                 sql += 'AND a.type = \'%s\' ' % ('want' if ttype == 'to_offer' else 'offer')
             if data.get('name'): 
-                sql += 'AND a.name ILIKE %(name)s '
+                sql += 'AND (a.name ILIKE %(name)s OR a.description ILIKE %(name)s)'
                 params.update({'name': '%'+data.get('name')+'%'})
             if data.get('categories', []):
                 sql += 'AND a.category_id IN %(category)s '
@@ -118,7 +118,7 @@ class SearchController(http.Controller):
 
             return sql
 
-        if not data.get('type') or data.get('type') == 'to_get':
+        if not data.get('type') or data.get('type') == 'to_find':
             # Find both wants and offers using UNION query
             return '(%s) UNION (%s)' % (_build_sql('to_offer', True), _build_sql('to_get')) \
                 + (' ORDER BY date_from ASC' if not return_count else ''), params
