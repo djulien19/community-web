@@ -33,7 +33,7 @@ msgstr "Acceptée"
 #. module: website_marketplace
 #: view:website:website_marketplace.view_announcement
 msgid "Add reply"
-msgstr "Ajouter une réponse"
+msgstr "Répondre"
 
 #. module: website_marketplace
 #: view:website:website_marketplace.mp_minisearch_form
@@ -270,7 +270,7 @@ msgstr "Payer"
 #. module: website_marketplace
 #: view:website:website_marketplace.single_reply
 msgid "Payment received"
-msgstr "Payment reçu"
+msgstr "Paiement reçu"
 
 #. module: website_marketplace
 #: code:addons/website_marketplace/controllers/announcement_detail.py:749
