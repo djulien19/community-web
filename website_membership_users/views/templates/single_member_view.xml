@@ -23,7 +23,7 @@
                             </t>
                         </div>
                         
-                        <div class="col-md-6 two-line">
+                        <div class="col-md-6 three-line">
                             <t t-foreach="member.skill_tag_ids" t-as="tag">
                                 <span class="label label-primary" t-field="tag.name"/>
                             </t>
@@ -36,7 +36,7 @@
                                 <thead>
                                     <tr>
                                         <th>Amount</th>
-                                        <th>Curreny</th>
+                                        <th>Currency</th>
                                     </tr>
                                 </thead>
                                 <tbody>
